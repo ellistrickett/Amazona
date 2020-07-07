@@ -110,6 +110,8 @@ a:hover{
   position: fixed;
   transform: translateX(-30rem);
   width: 30rem;
+  background-color: #f0f0f0;
+  height: 100%;
 }
 .sidebar.open{
   transform: translateX(0);
