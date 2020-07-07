@@ -10,7 +10,7 @@
   <div class="grid-container">
     <header class="header">
       <div class="brand">
-        <button>
+        <button onclick="openMenu()">
           &#9776;
         </button>
         <a href="index.html">amazona</a>
@@ -55,6 +55,11 @@
       All rights reserved.
     </footer>
   </div>
+  <script>
+    function openMenu(){
+      document.querySelector(".sidebar").classList.add('open');
+    }
+  </script>
 </body>
 
 </html>
