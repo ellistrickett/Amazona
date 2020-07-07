@@ -1,6 +1,7 @@
 export default {
   products: [
     {
+      _id:'1',
       name: 'Bowling Shirt',
       category: 'Shirts',
       image: '/images/d1.jpg',
@@ -10,6 +11,7 @@ export default {
       numReviews: 10
     },
     {
+      _id:'2',
       name: 'Combat Trousers',
       category: 'Trousers',
       image: '/images/d1.jpg',
@@ -19,6 +21,7 @@ export default {
       numReviews: 10
     },
     {
+      _id:'3',
       name: 'Funky Shirt',
       category: 'Shirts',
       image: '/images/d1.jpg',
