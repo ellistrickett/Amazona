@@ -41,22 +41,22 @@ function App() {
     <main className="main">
       <div className="content">
         <ul className="products">
+          {
+            data.products.map(products =>
           <li>
             <div className="product">
-              <img className="product-image" src="/images/d1.jpg" alt="product" />
+              <img className="product-image" src={product.image} alt="product" />
               <div className="product-name">
-                <a href="product.html">Bowling Shirt</a>
+                <a href="product.html">{product.name}</a>
                 </div>
-              <div className="product-brand">OF</div>
-              <div className="product-price">£60</div>
-              <div className="product-rating">4.5 Stars (10 Reviews)</div>
+              <div className="product-brand">{product.brand}</div>
+              <div className="product-price">{product.price}</div>
+          <div className="product-rating">{product.rating} Stars {product.numReviews}</div>
             </div>
-          </li>
-
+          </li>)
+          }
         </ul>
-
       </div>
-  
     </main>
     <footer className="footer">
       All rights reserved.
