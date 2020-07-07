@@ -1,6 +1,9 @@
 import React from 'react';
 import data from './data';
+import { BrowserRouter, Route } from 'react-router-dom';
 import './App.css';
+import HomeScreen from './Screens/HomeScreen';
+import ProductScreen from './Screens/ProductScreen';
 
 function App() {
 
@@ -12,7 +15,7 @@ function App() {
     document.querySelector(".sidebar").classList.remove('open');
   }
   return (
-    
+  <BrowserRouter>
     <div className="grid-container">
     <header className="header">
       <div className="brand">
@@ -40,6 +43,8 @@ function App() {
     </aside>
     <main className="main">
       <div className="content">
+        <Route path="/product/:id" component={ProductScreen} />
+        <Route path="/" exact={true} component={HomeScreen} />
         <ul className="products">
           {
             data.products.map(product =>
@@ -62,6 +67,7 @@ function App() {
       All rights reserved.
     </footer>
   </div>
+  </BrowserRouter>
   );
 }
 
