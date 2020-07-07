@@ -50,6 +50,12 @@ body{
   justify-content: center;
   align-items: center;
 }
+a{
+  text-decoration: none;
+}
+a:hover{
+  color: #ff8000;
+}
 
 /* Home Screen*/
 .products {
@@ -57,7 +63,6 @@ body{
   justify-content: center;
   align-items: center;
 }
-
 .products li {
   list-style-type: none;
   padding: 0;
@@ -66,19 +71,24 @@ body{
   height: 50rem;
   border: .1rem  #c0c0c0 solid;
 }
-
+.product{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
 .product-name {
   font-size: 2rem;
+  font-weight: bold;
 }
 .product-brand {
   font-size: 1.2rem;
   color: #808080;
 }
 .product-price {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
 }
-
 .product-image {
   max-width: 34rem;
   max-height: 34rem;
